@@ -20,6 +20,10 @@ body{
   padding: 0;
 }
 
+.img{
+  display: block;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -40,6 +44,11 @@ body{
 
 /* Header */
 
+.flex-box{
+  display: flex;
+}
+
+
 .logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -47,10 +56,29 @@ body{
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+}
+
+.header .logo-link{
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-span {
   color: var(--title-text-color);
+}
+
+.nav-list{
+  margin-right: 331px;
+}
+
+.nav-item{
+  margin-right: 50px;
+}
+
+.nav-list .nav-item:last-child{
+  margin-right: 0;
 }
 
 .nav-link {
@@ -60,6 +88,10 @@ body{
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .active {
@@ -71,6 +103,12 @@ body{
   color: var(--accent-color);
 }
 
+/* Контакты */
+
+.header .address{
+  display: flex;
+}
+
 .address-link {
   font-family: var(--main-font-family);
   font-style: normal;
@@ -79,6 +117,14 @@ body{
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .address .address-link:last-child{
+  margin-right: 0;
 }
 
 .address-link:hover,
@@ -133,11 +179,19 @@ body{
 /* Первая секция */
 
 .our-features{
-  margin: 94px;
+  margin-bottom: 94px;
 }
 
 .hidden-title {
   display: none;
+}
+
+.our-features .list-item{
+  margin-right: 30px;
+}
+
+.our-features .list-item:last-child{
+  margin-right: 0;
 }
 
 .subtitle {
@@ -187,6 +241,14 @@ body{
   margin-bottom: 50px;
 }
 
+.we-do .list-item{
+  margin-right: 30px;
+}
+
+.we-do .list-item:last-child{
+  margin-right: 0;
+}
+
 /* Третья секция */
 .team{
   padding-top: 94px;
@@ -196,6 +258,14 @@ body{
 .team .title{
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.team .list-item{
+  margin-right: 30px;
+}
+
+.team .list-item:last-child{
+  margin-right: 0;
 }
 
 .team .content-box{
