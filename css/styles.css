@@ -5,12 +5,37 @@
   --main-font-family: 'Roboto', sans-serif;
 }
 
+html{
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -65,7 +90,13 @@
 
 .hero {
   background: #2f303a;
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
 }
+
 
 .hero-title {
   text-transform: uppercase;
@@ -73,9 +104,14 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 }
 
 .hero-button {
@@ -87,9 +123,18 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 /* Первая секция */
+
+.our-features{
+  margin: 94px;
+}
 
 .hidden-title {
   display: none;
@@ -106,6 +151,9 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .our-features .text {
@@ -115,9 +163,16 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
 }
 
 /* Вторая секция */
+.we-do{
+  margin-bottom: 94px;
+}
 
 .title {
   font-family: var(--main-font-family);
@@ -127,15 +182,40 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Третья секция */
+.team{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .title{
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team .content-box{
+  margin: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.team .img{
+  margin-bottom: 30px;
+}
 
 .team .subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
+  
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team .desc {
@@ -145,15 +225,34 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
+
+  
 }
 
 /* footer */
 .footer {
   background: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo-link{
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .footer .logo-span {
   color: #ffffff;
+}
+
+.footer .address-list-item{
+  margin-bottom: 9px;
+  height: 21px;
+}
+
+.footer .address-list-item:last-child{
+  margin-bottom: 0;
 }
 
 .footer .address-link {
@@ -171,6 +270,18 @@
 
 /* Портфолио */
 
+.portfolio-header{
+  margin-bottom: 94px;
+}
+
+.portfolio{
+  margin-bottom: 94px;
+}
+
+.portfolio .filters-list{
+  margin-bottom: 50px;
+}
+
 .filters-button {
   background: #f5f4fa;
   font-family: var(--main-font-family);
@@ -180,6 +291,10 @@
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+  border: 0 solid transparent;
+  border-radius: 4px;
 }
 
 .filters-button:hover,
@@ -187,6 +302,16 @@
 .filters-button:active {
   background: #2196f3;
   color: #ffffff;
+  outline: none;
+}
+
+.portfolio .img{
+  margin-bottom: 20px;
+
+}
+
+.portfolio .portfolio-item{
+  padding-bottom: 20px;
 }
 
 .portfolio .subtitle {
@@ -194,6 +319,11 @@
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
+
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .portfolio .text {
@@ -203,4 +333,9 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 24px;
+  margin-right: 24px;
 }
