@@ -186,6 +186,7 @@ body{
 
 .our-features .list-item{
   margin-right: 30px;
+  width: 270px;
 }
 
 .our-features .list-item:last-child{
@@ -218,7 +219,6 @@ body{
 
   margin-top: 0;
   margin-bottom: 0;
-  width: 270px;
 }
 
 /* Вторая секция */
