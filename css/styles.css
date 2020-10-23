@@ -136,7 +136,6 @@ body {
 
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -174,7 +173,8 @@ body {
 /* Первая секция */
 
 .our-features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hidden-title {
@@ -220,7 +220,7 @@ body {
 
 /* Вторая секция */
 .we-do {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .title {
@@ -248,6 +248,8 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background: #f5f4fa;
 }
 
 .team .title {
@@ -334,11 +336,12 @@ body {
 /* Портфолио */
 
 .portfolio-header {
-  margin-bottom: 94px;
+  border-bottom: 1px solid #ececec;
 }
 
 .portfolio {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* кнопки */
@@ -384,14 +387,14 @@ body {
   flex-wrap: wrap;
 }
 
-.portfolio .img {
-  margin-bottom: 20px;
-}
-
 .portfolio .portfolio-item {
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
+
+  border: 1px solid #EEEEEE;
+
+  background: #FFFFFF;
 }
 
 .portfolio .portfolio-item:nth-child(3n + 3) {
@@ -402,16 +405,21 @@ body {
   margin-bottom: 0;
 }
 
+.portfolio-info {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+
 .portfolio .subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
 
-  margin-top: 0;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0;
+  padding-bottom: 4px;
 }
 
 .portfolio .text {
@@ -422,8 +430,5 @@ body {
   line-height: 30px;
   letter-spacing: 0.03em;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 24px;
-  margin-right: 24px;
-}
+  margin: 0;
+} */
